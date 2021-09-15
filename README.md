@@ -6,7 +6,9 @@ using updated conversion rates.
 ## Architecture Overview
 
 ### Heroku
-The application was deployed with heroku, you can access **[exchangemoney-service](https://exchangemoney-service.herokuapp.com/)**
+The application was deployed with **heroku**, you can access **[exchangemoney-service](https://exchangemoney-service.herokuapp.com/)**.
+
+**Warning**: every commit in master will run a **pipeline** on heroku, deploying application.
 
 ### Technologies
 
