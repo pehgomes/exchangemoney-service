@@ -1,0 +1,43 @@
+server:
+  tomcat:
+    max-threads: 600
+  error:
+    include-message: always #Spring boot 2.3.*
+  servlet:
+    encoding:
+      charset: UTF-8 #Spring boot 2.3.*
+      enabled: true
+      force: true
+spring:
+  application:
+    name: exchangemoney-service
+  main:
+    banner-mode: log
+
+  hibernate:
+    hbm2ddl:
+      auto: create
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    url: jdbc:h2:file:~/testdb
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+
+exchange-rates:
+  url: http://api.exchangeratesapi.io/v1
+  api-key: c06bc6ed3d403a236d692b3178b98fe0
+
+
+logging:
+  level:
+    root: WARN
+    br.com.exchangemoney: INFO
