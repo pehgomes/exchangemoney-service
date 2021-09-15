@@ -1,6 +1,6 @@
 # Exchange Money Service
 
-exchangemoney-service is responsible for converting between currencies,
+Is responsible for converting between currencies,
 using updated conversion rates.
 
 ### Architecture Overview
@@ -19,6 +19,26 @@ using updated conversion rates.
 * Domain Driven Design
 * SOLID
 * Clean Code
+* CDI
+
+### Motivations
+
+#### Spring Boot
+Offers me a range of other libraries, ranging from tests, cloud, REST Apis. And it has a built-in http server.
+
+#### CDI
+In this application I purposely used dependency injection without using *@autowired*. I used constructor injection, which makes life easier for developers when writing unit tests and mock injection. Through constructor injection we can see how much our classes are growing and the right time to refactor.
+The benefits can be seen [here](https://martinfowler.com/articles/injection.html) and [here](https://raphaelcarvalho.dev/2019/07/22/spring-boot-utilizar-autowired-e-uma-boa-pratica/) 
+
+#### Domain Driven Design
+I used of the software modeling approach that follows a set of practices in order to facilitate the implementation of complex rules (which is not the case here), but it is of great help when it comes to understanding what are the problems of the application. DDD prepares any microservice for future contexts, in case of possible application growth.
+
+#### SOLID
+I used SOLID because with these principles the software becomes more robust, scalable and flexible, making it tolerant to changes, facilitating the implementation of new requirements for the evolution and maintenance of the system.
+
+### Architecture
+
+![Installation](architecture.drawio.svg)
 
 ### Installation
 
@@ -36,7 +56,7 @@ gradlew clean build
 ```
 
 
-### Running tests
+### Testing
 
 `Linux`
 ```bash
@@ -47,6 +67,19 @@ gradlew clean build
 ```bash
 gradlew test
 ```
+
+### To start application from command line
+
+`Linux`
+```bash
+./gradlew bootRun
+```
+
+`Windows`
+```bash
+gradlew bootRun
+```
+
 
 ### Endpoints
 
