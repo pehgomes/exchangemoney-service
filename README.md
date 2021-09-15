@@ -1,6 +1,6 @@
 # Exchange Money Service
 
-Is responsible for converting between currencies,
+Responsible for converting between currencies,
 using updated conversion rates.
 
 ### Architecture Overview

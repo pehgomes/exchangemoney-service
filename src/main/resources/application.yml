@@ -41,3 +41,12 @@ logging:
   level:
     root: WARN
     br.com.exchangemoney: INFO
+
+#---
+#spring:
+#  profiles: dev
+#server:
+#  port:8080
+#---
+#spring:
+#  profiles: heroku
