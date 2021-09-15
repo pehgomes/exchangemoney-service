@@ -1,12 +1,12 @@
 # Exchange Money Service
 
-Responsible for converting between currencies,
+Is a API responsible for converting between currencies,
 using updated conversion rates.
 
 ## Architecture Overview
 
 ### Heroku
-The application was deployed with **heroku**, you can access **[exchangemoney-service](https://exchangemoney-service.herokuapp.com/)**.
+The application was deployed with **heroku**, you can access **[exchangemoney-service](https://exchangemoney-service.herokuapp.com/)**(o primeiro acesso pode ser  demorado).
 
 **Warning**: every commit in master will run a **pipeline** on heroku, deploying application.
 
