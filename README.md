@@ -32,7 +32,7 @@ Use build automation system [gradlew](https://docs.gradle.org/current/userguide/
 
 `Windows`
 ```bash
-gradle clean build
+gradlew clean build
 ```
 
 
@@ -45,7 +45,7 @@ gradle clean build
 
 `Windows`
 ```bash
-gradle test
+gradlew test
 ```
 
 ### Endpoints
