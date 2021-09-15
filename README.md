@@ -3,16 +3,21 @@
 Responsible for converting between currencies,
 using updated conversion rates.
 
-### Architecture Overview
+## Architecture Overview
+
+### Heroku
+The application was deployed with heroku, you can access **[exchangemoney-service](https://exchangemoney-service.herokuapp.com/)**
 
 ### Technologies
 
-* Java
+* Java 11
 * Spring Boot (Web, Data JPA, Actuator)
 * H2
 * Gradle
 * Lombok
 * Kotlin DSL
+* (CI/CD) Heroku
+
 
 ### Principles and Concepts
 
@@ -35,6 +40,9 @@ I used of the software modeling approach that follows a set of practices in orde
 
 #### SOLID
 I used SOLID because with these principles the software becomes more robust, scalable and flexible, making it tolerant to changes, facilitating the implementation of new requirements for the evolution and maintenance of the system.
+
+#### Spring Validations
+If fields necessary for processing the conversion are null, the backend does not need to implement validations with unnecessary **_if_** block encoding
 
 ### Architecture
 

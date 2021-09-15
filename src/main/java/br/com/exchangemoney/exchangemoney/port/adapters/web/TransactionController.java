@@ -4,6 +4,7 @@ import br.com.exchangemoney.exchangemoney.application.transaction.NewTransaction
 import br.com.exchangemoney.exchangemoney.application.transaction.TransactionApplicationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public class TransactionController {
     }
 
     @PostMapping
-    public ResponseEntity<TransactionResource> exchange(@RequestBody NewTransactionCommand command) {
+    public ResponseEntity<TransactionResource> exchange(@Validated @RequestBody NewTransactionCommand command) {
         var transaction = transactionApplicationService.newTransaction(command);
         return new ResponseEntity<>(transaction, HttpStatus.CREATED);
     }

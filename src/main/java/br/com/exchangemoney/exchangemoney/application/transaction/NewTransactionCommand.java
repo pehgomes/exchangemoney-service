@@ -1,8 +1,8 @@
 package br.com.exchangemoney.exchangemoney.application.transaction;
 
-import com.sun.istack.NotNull;
 import lombok.*;
 
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.stream.Collectors;
 
@@ -15,14 +15,16 @@ import static java.util.Arrays.stream;
 @ToString
 public class NewTransactionCommand {
 
+    @NotNull
     String taxId;
 
+    @NotNull
     BigDecimal amount;
 
     @NotNull
     String from;
 
-    @NonNull
+    @NotNull
     String to;
 
     public enum Rate {

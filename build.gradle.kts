@@ -35,6 +35,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("net.logstash.logback:logstash-logback-encoder:$logstashEncoderVersion")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+    implementation("javax.validation:validation-api")
 
     //Money
     implementation("javax.money:money-api:$javaMoneyVersion")
