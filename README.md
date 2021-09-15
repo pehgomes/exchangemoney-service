@@ -38,7 +38,7 @@ I used SOLID because with these principles the software becomes more robust, sca
 
 ### Architecture
 
-![Installation](architecture.drawio.svg)
+![Installation](architecture.drawio.png)
 
 ### Installation
 
